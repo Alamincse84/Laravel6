@@ -2,6 +2,10 @@
 
 Route::get('/','WelcomeController@index');
 
+Route::get('/category','WelcomeController@category');
+
+Route::get('/mcategory','WelcomeController@mcategory');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +40,6 @@ Route::get('/','WelcomeController@index');
 //        'country'=>'Bangladesh'
 //    ];
 //});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

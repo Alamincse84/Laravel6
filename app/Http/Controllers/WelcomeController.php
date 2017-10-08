@@ -17,4 +17,12 @@ class WelcomeController extends Controller
        //]);
 
    }
+
+   public function category(){
+       return view('front.category.category-content');
+   }
+
+   public function mcategory(){
+       return view('front.category.mcategory-content');
+   }
 }
